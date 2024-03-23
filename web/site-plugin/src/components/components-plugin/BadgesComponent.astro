@@ -1,0 +1,31 @@
+---
+import Code from "../site/Code.astro";
+---
+
+<div class="text-center m-5">
+  <h2 class="text-2xl font-semibold">Default</h2>
+</div>
+<div class="md:flex lg:flex md:justify-center md:items-center lg:justify-center lg:items-center md:gap-x-2 lg:gap-x-2">
+    <span class="badge-green"> Badge green </span>
+    <span class="badge-red"> Badge red </span>
+    <span class="badge-orange"> Badge orange </span>
+    <span class="badge-yellow"> Badge yellow </span>
+    <span class="badge-blue"> Badge blue </span>
+    <span class="badge-purple"> Badge purple </span>
+    <span class="badge-gray"> Badge gray </span>
+    <span class="badge-light"> Badge light </span>
+</div>
+<div class="flex justify-center items-center gap-x-2">
+  <Code
+    code={`
+        <span class="badge-green"> Badge green </span>
+        <span class="badge-red"> Badge red </span>
+        <span class="badge-orange"> Badge orange </span>
+        <span class="badge-yellow"> Badge yellow </span>
+        <span class="badge-blue"> Badge blue </span>
+        <span class="badge-purple"> Badge purple </span>
+        <span class="badge-gray"> Badge gray </span>
+        <span class="badge-light"> Badge light </span>  
+    `}
+  />
+</div>

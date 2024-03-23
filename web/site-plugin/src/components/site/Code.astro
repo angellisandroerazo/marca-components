@@ -1,0 +1,139 @@
+---
+interface Props {
+  code: string;
+}
+
+const { code } = Astro.props;
+
+import { Code as BoxCode } from "astro:components";
+---
+
+<wc-toast></wc-toast>
+
+<div class="relative w-full gap-x-2 rounded-xl bg-code p-2 m-5 text-white">
+  <pre
+    class="flex items-center justify-center text-sm">
+      <BoxCode wrap={true} code={code} theme="github-dark" lang="html" />
+    </pre>
+  <button
+    aria-label="Copy command"
+    class="absolute top-0 right-0 mt-1 mr-1 ring-offset-background focus-visible:ring-ring inline-flex size-7 items-center justify-center whitespace-nowrap rounded-full bg-white/10 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-clipboard"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"
+      ></path>
+      <path
+        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"
+      ></path>
+    </svg>
+  </button>
+</div>
+<script>
+  import { toast } from "wc-toast";
+  // Espera a que el DOM esté completamente cargado
+  document.addEventListener("DOMContentLoaded", function () {
+    const $copyButtons = document.querySelectorAll(
+      "[aria-label='Copy command']"
+    );
+
+    $copyButtons.forEach(($button) => {
+      $button.addEventListener("click", () => {
+        const $preElement = $button.parentElement.querySelector("pre");
+        const range = document.createRange();
+        const textToCopy = $preElement.textContent;
+
+        navigator.clipboard
+          .writeText(textToCopy)
+          .then(function () {
+            toast("Copied to clipboard!", {
+              theme: {
+                type: "light",
+              },
+            });
+          })
+          .catch(function (err) {
+            console.error("Error al copiar el texto al portapapeles: ", err);
+            toast("Failed to copy to clipboard!", {
+              theme: {
+                type: "light",
+              },
+            });
+          });
+      });
+    });
+  });
+</script>
+
+<!-- ---
+interface Props {
+  code: string;
+}
+
+const { code } = Astro.props;
+
+import { Code as BoxCode } from "astro:components";
+---
+
+<wc-toast></wc-toast>
+<div class="relative w-full gap-x-2 rounded-xl bg-code p-2 m-5 text-white">
+  <pre class="flex items-center justify-center text-sm">
+    <BoxCode wrap={true} code={code} theme="github-dark" lang="html" />
+  </pre>
+  <button
+    id="copyCommand"
+    aria-label="Copy command"
+    class="absolute top-0 right-0 mt-1 mr-1 ring-offset-background focus-visible:ring-ring inline-flex size-7 items-center justify-center whitespace-nowrap rounded-full bg-white/10 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-clipboard"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"
+      ></path>
+      <path
+        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"
+      ></path>
+    </svg>
+  </button>
+</div>
+<script>
+  import { toast } from "wc-toast";
+
+  const $copyCommand = document.getElementById(
+    "copyCommand"
+  );
+
+  $copyCommand.addEventListener("click", () => {
+    var preElement = document.querySelector("pre");
+    var range = document.createRange();
+    range.selectNode(preElement);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+
+    // Copia el texto seleccionado al portapapeles
+    document.execCommand("copy");
+
+    // Limpia la selección
+    window.getSelection().removeAllRanges();
+
+    toast("Copied to clipboard!", {
+      theme: {
+        type: "light",
+      },
+    });
+  });
+</script>
+ -->

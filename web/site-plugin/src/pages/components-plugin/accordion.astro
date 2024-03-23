@@ -1,0 +1,16 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Title from "../../components/site/Title.astro";
+import Content from "../../components/site/Content.astro";
+import Sidebar from "../../components/site/Sidebar.astro";
+import AccordionComponent from "../../components/components-plugin/AccordionComponent.astro";
+---
+
+<Layout title="Accordion">
+  <Sidebar>
+    <Title title="Accordion" />
+    <Content>
+      <AccordionComponent/>
+    </Content>
+  </Sidebar>
+</Layout>

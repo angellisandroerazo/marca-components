@@ -1,0 +1,25 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Title from "../../components/site/Title.astro";
+import Content from "../../components/site/Content.astro";
+import Sidebar from "../../components/site/Sidebar.astro";
+import ComponentsList from "../../components/site/ComponentsList.astro";
+---
+
+<Layout title="Components">
+  <Sidebar>
+    <Title title="Components" />
+    <Content>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et gravida
+        libero, vel porta nulla. Integer id massa non libero ultrices blandit.
+        Nulla facilisi. Phasellus tincidunt ullamcorper tortor id ultrices. Duis
+        varius purus in justo vehicula malesuada. Nullam lacinia euismod nisi,
+        at efficitur odio tempor non.
+      </p>
+    </Content>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+      <ComponentsList/>
+    </div>
+  </Sidebar>
+</Layout>

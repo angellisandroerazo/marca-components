@@ -1,0 +1,30 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Title from "../../components/site/Title.astro";
+import Content from "../../components/site/Content.astro";
+import Sidebar from "../../components/site/Sidebar.astro";
+---
+
+<Layout title="Introduction">
+  <Sidebar>
+    <Title title="Introduction" />
+    <Content>
+      <p>
+        This project aims to leverage the power of Tailwind CSS by integrating a
+        specialized component plugin. This plugin extends Tailwind CSS by
+        providing a curated collection of ready-to-use UI components. By
+        incorporating this plugin into our development workflow, we can
+        streamline UI development, reduce repetitive styling tasks, and
+        accelerate project delivery.
+      </p>
+    </Content>
+    <div class="flex mt-5 mb-5">
+      <a
+        href="/getting-started/installation"
+        class="bg-stone-600 rounded-xl py-2 px-8 flex gap-x-2 border-2 border-transparent text-xl hover:border-stone-300"
+      >
+        Installation</a
+      >
+    </div>
+  </Sidebar>
+</Layout>

@@ -1,0 +1,23 @@
+{
+  "name": "@angel.erazo/marca-components",
+  "version": "0.0.1",
+  "description": "",
+  "main": "/src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Angel Erazo",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "^8.4.35",
+    "tailwindcss": "3.4.1"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.0.0"
+  },
+  "dependencies": {
+    "@csstools/postcss-minify": "^1.1.1"
+  }
+}

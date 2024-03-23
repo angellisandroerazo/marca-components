@@ -1,0 +1,49 @@
+---
+const PROJECTS = [
+{
+    title: "Accordion",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et gravida
+        libero, vel porta nulla. Integer id massa non libero ultrices blandit.
+        Nulla facilisi.`,
+    link: "/components-plugin/accordion",
+  },
+  {
+    title: "Alerts",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et gravida
+        libero, vel porta nulla. Integer id massa non libero ultrices blandit.
+        Nulla facilisi.`,
+    link: "/components-plugin/alerts",
+  },
+  {
+    title: "Badges",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et gravida
+        libero, vel porta nulla. Integer id massa non libero ultrices blandit.
+        `,
+    link: "/components-plugin/badges",
+  },
+  {
+    title: "Buttons",
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et gravida
+        libero, vel porta nulla. Integer id massa non libero ultrices blandit.
+        `,
+    link: "/components-plugin/buttons",
+  },
+];
+---
+
+{
+  PROJECTS.map(({ title, description, link }) => (
+    <div class="pb-2 md:pr-2 lg:pr-2 ">
+      <a
+        href={link}
+      >
+        <div class="border-2 border-stone-600 rounded-lg hover:border-stone-300 hover:opacity-85 shadow ">
+          <div class="p-5">
+            <h5 class="mb-2 text-xl font-bold tracking-tight">{title}</h5>
+            <p class="mb-3 text-base font-normal opacity-70">{description}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  ))
+}

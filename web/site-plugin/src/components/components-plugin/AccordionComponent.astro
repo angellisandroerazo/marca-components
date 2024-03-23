@@ -1,0 +1,143 @@
+---
+import Code from "../site/Code.astro";
+import { Code as BoxCode } from "astro:components";
+---
+
+<div class="mt-5 mb-5 flex flex-col">
+  <p class="text-lg text-start">
+    Use the "open" attribute in element ditails to keep the accordion open.
+  </p>
+  <p class="text-lg font-semibold text-start mt-2">Example:</p>
+  <pre
+    class="text-center rounded bg-code">
+  <BoxCode code={`<details class="accordion-detail" name="first_accordion" open></details>`} wrap={true} lang="html" />
+</pre>
+</div>
+
+<div class="text-center m-5">
+  <h2 class="text-2xl font-semibold">Default</h2>
+</div>
+<div class="flex flex-col items-center">
+  <div class="flex flex-col gap-2 w-full">
+    <div class="accordion-default">
+      <details class="accordion-detail" name="first_accordion" open>
+        <summary class="accordion-title-default">Title One</summary>
+        <p class="m-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </details>
+      <details class="accordion-detail" name="first_accordion">
+        <summary class="accordion-title-default">Title Two</summary>
+        <p class="m-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </details>
+      <details class="accordion-detail" name="first_accordion">
+        <summary class="accordion-title-default">Title Three</summary>
+        <p class="m-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </details>
+      <details class="accordion-detail" name="first_accordion">
+        <summary class="accordion-title-default">Title Four</summary>
+        <p class="m-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </details>
+    </div>
+  </div>
+  <Code
+    code={`
+        <div class="accordion-default">
+            <details class="accordion-detail" name="first_accordion" open>
+                <summary class="accordion-title-default">Title One</summary>
+                <p class="m-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </details>
+            <details class="accordion-detail" name="first_accordion">
+                <summary class="accordion-title-default">Title Two</summary>
+                <p class="m-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </details>
+            <details class="accordion-detail" name="first_accordion">
+                <summary class="accordion-title-default">Title Three</summary>
+                <p class="m-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </details>
+            <details class="accordion-detail" name="first_accordion">
+                <summary class="accordion-title-default">Title Four</summary>
+                <p class="m-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </details>
+        </div>
+          `}
+  />
+</div>
+
+<div class="text-center m-5">
+  <h2 class="text-2xl font-semibold">Bordered</h2>
+</div>
+<div class="flex flex-col items-center">
+  <div class="flex flex-col gap-2 w-full">
+    <div class="accordion-bordered">
+      <details class="accordion-detail" name="first_accordion">
+        <summary class="accordion-title-top">Title One</summary>
+        <p class="m-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </details>
+      <details class="accordion-detail" name="first_accordion">
+        <summary class="accordion-title-middle">Title Two</summary>
+        <p class="m-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </details>
+      <details class="accordion-detail" name="first_accordion">
+        <summary class="accordion-title-middle">Title Three</summary>
+        <p class="m-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </details>
+      <details class="accordion-detail" name="first_accordion">
+        <summary class="accordion-title-bottom">Title Four</summary>
+        <p class="m-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </details>
+    </div>
+  </div>
+  <Code
+    code={`
+      <div class="accordion">
+        <details class="accordion-detail" name="first_accordion">
+            <summary class="accordion-title-top">Title One</summary>
+            <p class="m-4 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </details>
+        <details class="accordion-detail" name="first_accordion">
+            <summary class="accordion-title-middle">Title Two</summary>
+            <p class="m-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </details>
+        <details class="accordion-detail" name="first_accordion">
+            <summary class="accordion-title-middle">Title Three</summary>
+            <p class="m-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </details>
+        <details class="accordion-detail" name="first_accordion">
+            <summary class="accordion-title-bottom">Title Four</summary>
+            <p class="m-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </details>
+      </div>
+        `}
+  />
+</div>
