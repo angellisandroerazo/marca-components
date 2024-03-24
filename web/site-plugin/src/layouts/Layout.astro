@@ -6,13 +6,14 @@ interface Props {
 const { title } = Astro.props;
 
 import "../style/global.css";
+import '@fontsource/montserrat/500.css';
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="description" content="Componens" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link
@@ -33,11 +34,10 @@ import "../style/global.css";
   html {
     color-scheme: dark;
     scroll-behavior: smooth;
-    font-family: "KantumruyPro-Regular", sans-serif;
   }
 
   body {
-    background-color: #1c1e21;
+    font-family: 'Montserrat', sans-serif;
     height: 100vh;
     weigth: 100vh;
   }
@@ -50,7 +50,7 @@ import "../style/global.css";
 </style>
 
 <script is:inline>
-  const theme = (() => {
+  /* const theme = (() => {
     if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
       return localStorage.getItem("theme");
     }
@@ -65,5 +65,5 @@ import "../style/global.css";
   } else {
     document.documentElement.classList.add("dark");
   }
-  window.localStorage.setItem("theme", theme);
+  window.localStorage.setItem("theme", theme); */
 </script>

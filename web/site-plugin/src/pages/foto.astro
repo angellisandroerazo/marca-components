@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Background from "../components/site/Background.astro";
+---
+
+<Background />
+<Layout title="foto">
+  <div class="flex flex-col items-center justify-center h-full gap-8">
+    <div class="grid grid-cols-2 gap-3">
+      <div class="alert-gray">A simple gray alert — check it out!</div>
+      <div class="alert-alternative-yellow" role="alert">A alternative yellow alert — check it out!</div>
+    </div>
+    <div class="grid grid-cols-3 gap-8">
+        <button class="btn-focus-orange" > Button orange </button>
+        <button class="btn-purple-h"> Button purple </button>
+        <button class="btn-outline-blue"> Button outline blue </button>
+      </div>
+  </div>
+</Layout>

@@ -1,4 +1,5 @@
 ---
+import BoxIcon from "../../img/BoxIcon.astro"
 import Background from "./Background.astro"
 ---
 
@@ -44,7 +45,7 @@ import Background from "./Background.astro"
       </div>
       <div class="flex items-center">
         <div class="flex items-center ms-3 gap-2">
-          <a href="#" class="hover:opacity-85">
+          <a href="https://github.com/AngelLisandroErazo/marca-components" target="_blank" class="hover:opacity-85">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -89,8 +90,8 @@ import Background from "./Background.astro"
       </li>
       <li>
         <div class="flex gap-x-2">
-          <a href="/components-list/components" class="flex items-center p-2 rounded-lg gap-x-2">
-          <img src="/box-icon.svg" alt="book-icon" />
+          <a href="/components-list/components" class="flex items-center p-2 rounded-lg gap-x-2 hover:underline">
+          <BoxIcon/>
           <span class="text-lg font-bold">Components</span>
         </a>
         </div>
@@ -101,18 +102,18 @@ import Background from "./Background.astro"
         </a>
       </li>
       <li>
-        <a href="/components-plugin/alerts" class="flex items-center p-2 rounded-lg hover:bg-stone-600">
-          <span class="ms-10">Alerts</span>
+        <a href="/components-plugin/alert" class="flex items-center p-2 rounded-lg hover:bg-stone-600">
+          <span class="ms-10">Alert</span>
         </a>
       </li>
       <li>
-        <a href="/components-plugin/badges" class="flex items-center p-2 rounded-lg hover:bg-stone-600">
-          <span class="ms-10">Badges</span>
+        <a href="/components-plugin/badge" class="flex items-center p-2 rounded-lg hover:bg-stone-600">
+          <span class="ms-10">Badge</span>
         </a>
       </li>
       <li>
-        <a href="/components-plugin/buttons" class="flex items-center p-2 rounded-lg hover:bg-stone-600">
-          <span class="ms-10">Buttons</span>
+        <a href="/components-plugin/button" class="flex items-center p-2 rounded-lg hover:bg-stone-600">
+          <span class="ms-10">Button</span>
         </a>
       </li>
     </ul>

@@ -3,18 +3,50 @@ import Layout from "../../layouts/Layout.astro";
 import Title from "../../components/site/Title.astro";
 import Content from "../../components/site/Content.astro";
 import Sidebar from "../../components/site/Sidebar.astro";
-import Code from "../../components/site/Code.astro"
+import Code from "../../components/site/Code.astro";
+import LinkIcon from "../../img/LinkIcon.astro";
 ---
 
 <Layout title="Installation">
   <Sidebar>
     <Title title="Installation" />
     <Content>
-      <p>
-        1.- 
-      </p>
+      <p class="text-xl font-semibold">Requirements:</p>
+      <ul class="list-disc m-5">
+        <li>
+          <div class="flex gap-2">
+            <div
+            class="flex items-baseline gap-2 text-blue-600 text-lg hover:text-blue-700 hover:underline fill-blue-600 hover:fill-blue-700"
+          >
+            <a href="https://tailwindcss.com/" target="_blank" class=""
+              >Tailwind CSS 3</a
+            >
+            <span class=""><LinkIcon /></span>
+          </div>
+          <span class="text-lg">or later</span>
+          </div>
+        </li>
+      </ul>
+      <div class="border-b border-stone-600 m-5"></div>
+      <div class="flex flex-col justify-center items-center">
+        <p>1. Install the dependency</p>
+        <div class="w-1/2">
+          <Code code="npm i @alemdev/marca-components" />
+        </div>
+        <p>2. Add to your configuration</p>
+        <div class="w-1/2">
+          <Code
+            code={`
+            import components from '@alemdev/marca-components'
+
+            export default {
+              // ...rest of the options
+              plugins: [components],
+            }
+              `}
+          />
+        </div>
+      </div>
     </Content>
-    <div class="w-1/2"><Code code="hola"/></div>
-    
   </Sidebar>
 </Layout>
