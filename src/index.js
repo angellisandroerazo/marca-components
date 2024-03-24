@@ -1,4 +1,4 @@
-import createPlugin from 'tailwindcss/plugin';
+import createPlugin from 'tailwindcss/plugin.js';
 import components from './elements.js';
 
 /**
