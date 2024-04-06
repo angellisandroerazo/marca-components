@@ -21,6 +21,8 @@ This project aims to leverage the power of Tailwind CSS by integrating a special
 
 #### Package install
 
+> Install the package:
+
 - npm
 ```bash
 npm install @alemdev/marca-components
