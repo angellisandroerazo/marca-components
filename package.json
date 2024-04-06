@@ -1,6 +1,6 @@
 {
   "name": "@alemdev/marca-components",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "This project aims to leverage the power of Tailwind CSS by integrating a specialized component plugin.",
   "main": "./src/index.js",
   "type": "module",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/angellisandroerazo/maarca-components"
+    "url": "https://github.com/angellisandroerazo/marca-components"
   },
   "keywords": [
     "tailwind",
