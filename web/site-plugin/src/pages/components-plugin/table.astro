@@ -1,0 +1,16 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Title from "../../components/site/Title.astro";
+import Content from "../../components/site/Content.astro";
+import Sidebar from "../../components/site/Sidebar.astro";
+import TableComponent from "../../components/components-plugin/TableComponent.astro";
+---
+
+<Layout title="Table">
+  <Sidebar>
+    <Title title="Table" />
+    <Content>
+      <TableComponent/>
+    </Content>
+  </Sidebar>
+</Layout>

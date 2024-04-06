@@ -1,4 +1,5 @@
 import components from "@alemdev/marca-components"
+//import components from "../../src/index"
 
 /** @type {import('tailwindcss').Config} */
 export default {

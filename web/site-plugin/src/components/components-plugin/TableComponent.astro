@@ -1,0 +1,181 @@
+---
+import Code from "../site/Code.astro";
+
+const divTableText = " <div class='table-color-container'>";
+const divText = " <div>";
+const tableContainer = "<div class='table-color-container'>";
+const table = "<table class='table-color'>";
+---
+
+<div class="text-center m-5">
+  <h2 class="text-2xl font-semibold">Default</h2>
+</div>
+<div class="m-2">
+  <p>
+    The {divText} before the {divTableText} defines the width you want the table
+    to be.
+  </p>
+  <p>
+    To change color change {tableContainer} and {table}
+  </p>
+  <p class="font-semibold text-lg mt-2">Colors:</p>
+  <ul class="ml-8 list-disc">
+    <li>
+      <div class="flex">
+        <p class="text-green-600">table-green-container</p>
+        <p class="mx-2">and</p>
+        <p class="text-green-600">table-green</p>
+      </div>
+    </li>
+    <li>
+      <div class="flex">
+        <p class="text-red-500">table-red-container</p>
+        <p class="mx-2">and</p>
+        <p class="text-red-500">table-red</p>
+      </div>
+    </li>
+    <li>
+      <div class="flex">
+        <p class="text-orange-400">table-orange-container</p>
+        <p class="mx-2">and</p>
+        <p class="text-orange-400">table-orange</p>
+      </div>
+    </li>
+    <li>
+      <div class="flex">
+        <p class="text-yellow-400">table-yellow-container</p>
+        <p class="mx-2">and</p>
+        <p class="text-yellow-400">table-yellow</p>
+      </div>
+    </li>
+    <li>
+      <div class="flex">
+        <p class="text-blue-500">table-blue-container</p>
+        <p class="mx-2">and</p>
+        <p class="text-blue-500">table-blue</p>
+      </div>
+    </li>
+    <li>
+      <div class="flex">
+        <p class="text-purple-500">table-purple-container</p>
+        <p class="mx-2">and</p>
+        <p class="text-purple-500">table-purple</p>
+      </div>
+    </li>
+    <li>
+      <div class="flex">
+        <p class="text-gray-600">table-gray-container</p>
+        <p class="mx-2">and</p>
+        <p class="text-gray-600">table-gray</p>
+      </div>
+    </li>
+    <li>
+      <div class="flex">
+        <p class="text-neutral-300">table-light-container</p>
+        <p class="mx-2">and</p>
+        <p class="text-neutral-300">table-light</p>
+      </div>
+    </li>
+  </ul>
+  <p class="font-semibold text-xl mt-5">Example:</p>
+</div>
+<div
+  class="md:flex lg:flex md:flex-col lg:flex-col md:justify-center md:items-center lg:justify-center lg:items-center md:gap-x-2 lg:gap-x-2"
+>
+  <div class="md:w-1/2 lg:w-1/2">
+    <div class="table-gray-container">
+      <table class="table-gray">
+        <thead>
+          <tr class="table-title">
+            <th>#</th>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>User</th>
+            <th>E-mail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>James</td>
+            <td>Miller</td>
+            <td>@james</td>
+            <td>james@mail.com</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jose</td>
+            <td>Erazo</td>
+            <td>@jose</td>
+            <td>jose@mail.com</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Larry </td>
+            <td>Jones</td>
+            <td>@larry</td>
+            <td>larry@mail.com</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Marco</td>
+            <td>Perez</td>
+            <td>@marco</td>
+            <td>marco@mail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="flex justify-center items-center gap-x-2 md:w-8/12 lg:w-8/12">
+    <Code
+      code={`
+      <!– In this div put the width –>”
+        <div class="w-1/2">
+          <div class="table-gray-container">
+            <table class="table-gray">
+              <thead>
+                <tr class="table-title">
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Last Name</th>
+                  <th>User</th>
+                  <th>E-mail</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>James</td>
+                  <td>Miller</td>
+                  <td>@james</td>
+                  <td>james@mail.com</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jose</td>
+                  <td>Erazo</td>
+                  <td>@jose</td>
+                  <td>jose@mail.com</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry </td>
+                  <td>Jones</td>
+                  <td>@larry</td>
+                  <td>larry@mail.com</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Marco</td>
+                  <td>Perez</td>
+                  <td>@marco</td>
+                  <td>marco@mail.com</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      `}
+    />
+  </div>
+</div>

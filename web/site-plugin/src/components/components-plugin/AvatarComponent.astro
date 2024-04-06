@@ -1,0 +1,258 @@
+---
+import Code from "../site/Code.astro";
+import LinkIcon from "../../img/LinkIcon.astro";
+---
+
+<div class="text-center m-5">
+  <h2 class="text-2xl font-semibold">Default</h2>
+</div>
+<div class="m-2">
+  <p>You can choose the size you need.</p>
+  <p class="font-semibold text-lg mt-2">Sizes:</p>
+  <ul class="ml-8 list-disc">
+    <li>
+      <div class="flex">
+        <p class="font-semibold mr-2">Normal:</p>
+        <p>avatar-default</p>
+      </div>
+    </li>
+    <li>
+      <div class="flex">
+        <p class="font-semibold mr-2">Medium:</p>
+        <p>avatar-md-default</p>
+      </div>
+    </li>
+    <li>
+      <div class="flex">
+        <p class="font-semibold mr-2">Large:</p>
+        <p>avatar-lg-default</p>
+      </div>
+    </li>
+  </ul>
+  <p class="font-semibold text-xl mt-5">Example:</p>
+</div>
+<div class="flex flex-row items-center justify-center md:gap-x-2 lg:gap-x-2">
+  <img class="avatar-default" src="/pexels-jean-van-der-meulen-2078467.webp" />
+  <img
+    class="avatar-md-default"
+    src="/pexels-cristina-andrea-alvarez-cruz-2850833.webp"
+  />
+  <img class="avatar-lg-default" src="/pexels-eva-bronzini-5502104.webp" />
+</div>
+<div class="flex justify-center items-center gap-x-2">
+  <Code
+    code={`
+      <img class="avatar-default" src="/pexels-jean-van-der-meulen-2078467.webp" />
+      <img class="avatar-md-default" src="/pexels-cristina-andrea-alvarez-cruz-2850833.webp"/>
+      <img class="avatar-lg-default" src="/pexels-eva-bronzini-5502104.webp" /> 
+    `}
+  />
+</div>
+
+<div class="text-center m-5">
+  <h2 class="text-2xl font-semibold">Bordered</h2>
+</div>
+<div class="m-2">
+  <p>
+    You can change the border color and size depending on what you want, simply
+    change the 'avatar-size-color'.
+  </p>
+  <p class="font-semibold text-lg mt-2">Colors:</p>
+  <ul class="ml-8 list-disc">
+    <li>
+      <p class="text-green-600">avatar-size-green</p>
+    </li>
+    <li>
+      <p class="text-red-500">avatar-size-red</p>
+    </li>
+    <li>
+      <p class="text-orange-400">avatar-size-orange</p>
+    </li>
+    <li>
+      <p class="text-yellow-400">avatar-size-yellow</p>
+    </li>
+    <li>
+      <p class="text-blue-500">avatar-size-blue</p>
+    </li>
+    <li>
+      <p class="text-purple-500">avatar-size-purple</p>
+    </li>
+    <li>
+      <p class="text-gray-600">avatar-size-gray</p>
+    </li>
+    <li>
+      <p class="text-neutral-300">avatar-size-light</p>
+    </li>
+  </ul>
+  <p class="font-semibold text-lg mt-2">Sizes:</p>
+  <ul class="ml-8 list-disc">
+    <li>
+      <div class="flex">
+        <p class="font-semibold mr-2">Normal:</p>
+        <p>avatar-color</p>
+      </div>
+    </li>
+    <li>
+      <div class="flex">
+        <p class="font-semibold mr-2">Medium:</p>
+        <p>avatar-md-color</p>
+      </div>
+    </li>
+    <li>
+      <div class="flex">
+        <p class="font-semibold mr-2">Large:</p>
+        <p>avatar-lg-color</p>
+      </div>
+    </li>
+  </ul>
+  <p class="font-semibold text-xl mt-5">Example:</p>
+</div>
+<div class="flex flex-row items-center justify-center md:gap-x-5 lg:gap-x-5">
+  <div class="flex flex-row items-center justify-center md:gap-x-2 lg:gap-x-2">
+    <img
+      class="avatar-red"
+      src="/pexels-jean-van-der-meulen-2078467.webp"
+      alt="avatar-img"
+    />
+    <img
+      class="avatar-md-red"
+      src="/pexels-cristina-andrea-alvarez-cruz-2850833.webp"
+      alt="avatar-img"
+    />
+    <img
+      class="avatar-lg-red"
+      src="/pexels-eva-bronzini-5502104.webp"
+      alt="avatar-img"
+    />
+  </div>
+  <div class="flex flex-row items-center justify-center md:gap-x-2 lg:gap-x-2">
+    <img
+      class="avatar-light"
+      src="/pexels-philipp-fahlbusch-11805196.webp"
+      alt="avatar-img"
+    />
+    <img
+      class="avatar-md-light"
+      src="/pexels-yeye-18168507.webp"
+      alt="avatar-img"
+    />
+    <img
+      class="avatar-lg-light"
+      src="/pexels-cristina-andrea-alvarez-cruz-2850833.webp"
+      alt="avatar-img"
+    />
+  </div>
+  <div class="flex flex-row items-center justify-center md:gap-x-2 lg:gap-x-2">
+    <img
+      class="avatar-yellow"
+      src="/pexels-yeye-18168507.webp"
+      alt="avatar-img"
+    />
+    <img
+      class="avatar-md-yellow"
+      src="/pexels-eva-bronzini-5502104.webp"
+      alt="avatar-img"
+    />
+    <img
+      class="avatar-lg-yellow"
+      src="/pexels-philipp-fahlbusch-11805196.webp"
+      alt="avatar-img"
+    />
+  </div>
+</div>
+<div class="flex justify-center items-center gap-x-2">
+  <Code
+    code={`
+      <img class="avatar-red" src="/pexels-jean-van-der-meulen-2078467.webp" />
+      <img class="avatar-md-red" src="/pexels-cristina-andrea-alvarez-cruz-2850833.webp" />
+      <img class="avatar-lg-red" src="/pexels-eva-bronzini-5502104.webp" />
+      
+      <img class="avatar-light" src="/pexels-philipp-fahlbusch-11805196.webp" />
+      <img class="avatar-md-light" src="/pexels-yeye-18168507.webp" />
+      <img class="avatar-lg-light" src="/pexels-cristina-andrea-alvarez-cruz-2850833.webp" />
+      
+      <img class="avatar-yellow" src="/pexels-yeye-18168507.webp" />
+      <img class="avatar-md-yellow" src="/pexels-eva-bronzini-5502104.webp" />
+      <img class="avatar-lg-yellow" src="/pexels-philipp-fahlbusch-11805196.webp" />
+    `}
+  />
+</div>
+
+<div class="flex gap-2 m-2">
+  <span
+    >Hummingbird photo by Cristina Andrea Alvarez Cruz. You can find the photo
+    at:
+  </span>
+  <div class="flex gap-2">
+    <div
+      class="flex items-baseline gap-2 text-blue-600 hover:text-blue-700 hover:underline fill-blue-600 hover:fill-blue-700"
+    >
+      <a
+        href="https://www.pexels.com/es-es/foto/colibri-volador-2850833/"
+        target="_blank"
+        class="">hummingbird</a
+      >
+      <span class=""><LinkIcon /></span>
+    </div>
+  </div>
+</div>
+<div class="flex gap-2 m-2">
+  <span>Llama photo by Eva Bronzini. You can find the photo at: </span>
+  <div class="flex gap-2">
+    <div
+      class="flex items-baseline gap-2 text-blue-600 hover:text-blue-700 hover:underline fill-blue-600 hover:fill-blue-700"
+    >
+      <a
+        href="https://www.pexels.com/es-es/foto/perro-de-pelo-corto-marron-y-negro-5502104/"
+        target="_blank"
+        class="">llama</a
+      >
+      <span class=""><LinkIcon /></span>
+    </div>
+  </div>
+</div>
+<div class="flex gap-2 m-2">
+  <span>Penguin photo by Jean van der Meulen. You can find the photo at: </span>
+  <div class="flex gap-2">
+    <div
+      class="flex items-baseline gap-2 text-blue-600 hover:text-blue-700 hover:underline fill-blue-600 hover:fill-blue-700"
+    >
+      <a
+        href="https://www.pexels.com/es-es/foto/pinguino-blanco-y-negro-2078467/"
+        target="_blank"
+        class="">penguin</a
+      >
+      <span class=""><LinkIcon /></span>
+    </div>
+  </div>
+</div>
+<div class="flex gap-2 m-2">
+  <span>Duck photo by Philipp Fahlbusch. You can find the photo at: </span>
+  <div class="flex gap-2">
+    <div
+      class="flex items-baseline gap-2 text-blue-600 hover:text-blue-700 hover:underline fill-blue-600 hover:fill-blue-700"
+    >
+      <a
+        href="https://www.pexels.com/photo/white-and-brown-duck-in-close-up-photography-11805196/"
+        target="_blank"
+        class="">duck</a
+      >
+      <span class=""><LinkIcon /></span>
+    </div>
+  </div>
+</div>
+<div class="flex gap-2 m-2">
+  <span>Cat photo by Yeye. You can find the photo at: </span>
+  <div class="flex gap-2">
+    <div
+      class="flex items-baseline gap-2 text-blue-600 hover:text-blue-700 hover:underline fill-blue-600 hover:fill-blue-700"
+    >
+      <a
+        href="https://www.pexels.com/photo/portrait-of-a-ginger-cat-18168507/"
+        target="_blank"
+        class="">cat</a
+      >
+      <span class=""><LinkIcon /></span>
+    </div>
+  </div>
+</div>
