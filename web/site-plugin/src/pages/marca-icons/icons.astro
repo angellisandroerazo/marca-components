@@ -1,0 +1,45 @@
+---
+import Navbar from "../../components/site/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+import IconsList from "../../components/icons-list/IconsList.astro";
+import Footer from "../../components/site/Footer.astro";
+import LinkIcon from "../../img/LinkIcon.astro";
+---
+
+<Layout title="Welcome to Marca elements.">
+  <Navbar>
+    <main>
+      <div
+        class="flex flex-col items-center justify-center gap-5 md:m-12 lg:m-12 text-center"
+      >
+        <h1 class="text-8xl font-bold text-gray-200">Icons</h1>
+        <p class="text-3xl text-blue-500 text-center">
+          Choose and use your favorite
+        </p>
+      </div>
+      <div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 m-5 bg-neutral-300 text-black p-5 rounded-lg border-2 border-stone-500"
+        >
+          <IconsList />
+        </div>
+        <div class="flex gap-2 m-2">
+          <span>The icons are made by: </span>
+          <div class="flex gap-2">
+            <div
+              class="flex items-baseline gap-2 text-blue-600 hover:text-blue-700 hover:underline fill-blue-600 hover:fill-blue-700"
+            >
+              <a
+                href="#"
+                target="_blank"
+                class="">Jhonatan Rodriguez</a
+              >
+              <span class=""><LinkIcon /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </Navbar>
+  <Footer />
+</Layout>

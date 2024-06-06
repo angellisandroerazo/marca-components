@@ -1,0 +1,178 @@
+---
+const PROJECTS = [
+  {
+    name: "behance-icon",
+    link: "/icons/behance-icon.svg",
+  },
+  {
+    name: "facebook-icon",
+    link: "/icons/facebook-icon.svg",
+  },
+  {
+    name: "gps-fill-icon",
+    link: "/icons/gps-fill-icon.svg",
+  },
+  {
+    name: "gps-icon",
+    link: "/icons/gps-icon.svg",
+  },
+  {
+    name: "gps-rounded-icon",
+    link: "/icons/gps-rounded-icon.svg",
+  },
+  {
+    name: "home-fill-icon",
+    link: "/icons/home-fill-icon.svg",
+  },
+  {
+    name: "home-icon",
+    link: "/icons/home-icon.svg",
+  },
+  {
+    name: "instagram-icon",
+    link: "/icons/instagram-icon.svg",
+  },
+  {
+    name: "letter-twitter-icon",
+    link: "/icons/letter-twitter-icon.svg",
+  },
+  {
+    name: "line-icon",
+    link: "/icons/line-icon.svg",
+  },
+  {
+    name: "linkedin-icon",
+    link: "/icons/linkedin-icon.svg",
+  },
+  {
+    name: "mail-fill-icon",
+    link: "/icons/mail-fill-icon.svg",
+  },
+  {
+    name: "mail-icon",
+    link: "/icons/mail-icon.svg",
+  },
+  {
+    name: "messenger-icon",
+    link: "/icons/messenger-icon.svg",
+  },
+  {
+    name: "phone-fill-icon",
+    link: "/icons/phone-fill-icon.svg",
+  },
+  {
+    name: "phone-icon",
+    link: "/icons/phone-icon.svg",
+  },
+  {
+    name: "phone-rounded-icon",
+    link: "/icons/phone-rounded-icon.svg",
+  },
+  {
+    name: "pinterest-icon",
+    link: "/icons/pinterest-icon.svg",
+  },
+  {
+    name: "reddit-icon",
+    link: "/icons/reddit-icon.svg",
+  },
+  {
+    name: "skype-icon",
+    link: "/icons/skype-icon.svg",
+  },
+  {
+    name: "snapchat-icon",
+    link: "/icons/snapchat-icon.svg",
+  },
+  {
+    name: "spotify-icon",
+    link: "/icons/spotify-icon.svg",
+  },
+  {
+    name: "sound-cloud-icon",
+    link: "/icons/sound-cloud-icon.svg",
+  },
+  {
+    name: "talk-icon",
+    link: "/icons/talk-icon.svg",
+  },
+  {
+    name: "telegram-icon",
+    link: "/icons/telegram-icon.svg",
+  },
+  {
+    name: "tiktok-icon",
+    link: "/icons/tiktok-icon.svg",
+  },
+  {
+    name: "tinder-icon",
+    link: "/icons/tinder-icon.svg",
+  },
+  {
+    name: "twitch-icon",
+    link: "/icons/twitch-icon.svg",
+  },
+  {
+    name: "twitter-icon",
+    link: "/icons/twitter-icon.svg",
+  },
+  {
+    name: "user-fill-icon",
+    link: "/icons/user-fill-icon.svg",
+  },
+  {
+    name: "user-icon",
+    link: "/icons/user-icon.svg",
+  },
+  {
+    name: "user-rounded-icon",
+    link: "/icons/user-rounded-icon.svg",
+  },
+  {
+    name: "vimeo-icon",
+    link: "/icons/vimeo-icon.svg",
+  },
+  {
+    name: "whatsapp-icon",
+    link: "/icons/whatsapp-icon.svg",
+  },
+  {
+    name: "youtube-icon",
+    link: "/icons/youtube-icon.svg",
+  },
+];
+---
+
+{
+  PROJECTS.map(({ name, link }) => (
+    <div class="pb-2 md:pr-2 lg:pr-2">
+      <a
+        href={link}
+        target="_blank"
+        class="flex flex-col items-center justify-center"
+      >
+        <div class="border-2 border-stone-500 rounded-lg hover:border-stone-700 shadow p-2 flex flex-col items-center justify-center">
+          <h5 class="font-bold">{name}</h5>
+          <img src={link} alt={name} class="w-20 h-20" />
+          <a
+            href={link}
+            download={link}
+            class="mt-2 px-4 py-2 hover:opacity-85 bg-stone-600 text-white rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-download"
+              viewBox="0 0 16 16"
+            >
+              <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+              <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+            </svg>
+          </a>
+        </div>
+      </a>
+    </div>
+  ))
+}
